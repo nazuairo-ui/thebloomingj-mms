@@ -8,12 +8,12 @@
 
 :root {
     --ink: #1a1a2e;
-    --mist: #f0eff6;
-    --lavender: #c8b8e8;
-    --violet: #7c5cbf;
-    --blush: #e8d5f0;
+    --mist: #261d1a;
+    --lavender: #D9BBB4;
+    --violet: #A6727C;
+    --blush: #594F40;
     --white: #ffffff;
-    --soft: #6b6b8a;
+    --soft: #732D3A;
 }
 
 html {
@@ -37,9 +37,9 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0 48px;
-    height: 64px;
+    height: 65px;
     background: rgba(240, 239, 246, 0.85);
-    backdrop-filter: blur(14px);
+    backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(124, 92, 191, 0.12);
     transition: box-shadow 0.3s;
 }
@@ -48,11 +48,19 @@ nav.scrolled {
     box-shadow: 0 4px 24px rgba(124, 92, 191, 0.1);
 }
 
-.nav-logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.3rem;
+.logo-the {
+    font-family: 'NewIconScript', serif;
+    font-size: 1.5rem;
     font-weight: 700;
-    color: var(--violet);
+    color: var(--soft);
+    letter-spacing: -0.02em;
+}
+
+.logo-bloom {
+    font-family: 'CormorantGaramond', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--soft);
     letter-spacing: -0.02em;
 }
 
@@ -78,14 +86,14 @@ nav.scrolled {
     bottom: -4px;
     left: 0;
     width: 0;
-    height: 2px;
-    background: var(--violet);
+    height: 2.5px;
+    background: var(--soft);
     border-radius: 2px;
-    transition: width 0.25s;
+    transition: width 0.5s;
 }
 
 .nav-links a:hover {
-    color: var(--violet);
+    color: var(--soft);
 }
 
 .nav-links a:hover::after,
@@ -94,7 +102,17 @@ nav.scrolled {
 }
 
 .nav-links a.active {
-    color: var(--violet);
+    color: var(--soft);
+}
+
+@font-face {
+    font-family: 'NewIconScript';
+    src: url('/static/fonts/New-Icon-Script-Exfont1157.otf');
+}
+
+@font-face {
+    font-family: 'CormorantGaramond';
+    src: url('/static/fonts/CormorantGaramond-Italic.ttf');
 }
 
 /* ── SECTIONS ── */

@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Space</title>
+    <title>{% block title %}The Blooming Journey MMS{% endblock %}</title>
+    <meta name="description" content="Sistem Tiket Digital Kajian Offline MMS 2026">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='mms.png') }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='mms.png') }}">
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap"
         rel="stylesheet" />
@@ -16,14 +19,20 @@
     <div class="scroll-progress" id="scrollBar"></div>
 
     <nav id="navbar">
-        <div class="nav-logo">myspace✦</div>
-        <ul class="nav-links">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="nav-logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="logo"
+                style="height: 36px; vertical-align: middle; margin-right: 8px;">
+            <span class="logo-the">The</span>
+            <span class="logo-bloom">Blooming Journey</span>
+        </div>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#join">How To Join</a></li>
+                <li><a href="#mms">About MMS</a></li>
+                <li><a href="#tambahan">tambahan</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
     </nav>
 
     <!-- HOME -->
@@ -32,107 +41,102 @@
         <h1 class="hero-title">Halo, aku<br><span>Namamu</span></h1>
         <p class="hero-sub">Aku suka menciptakan hal-hal yang bermakna — lewat desain, kata-kata, atau kode. Ini adalah
             ruang kecilku di internet.</p>
-        <a href="#about" class="btn">Kenalan yuk →</a>
+        <a href="#join" class="btn">Kenalan yuk →</a>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about">
+    <!-- HOW TO JOIN -->
+    <section id="join">
         <div class="about-header">
-            <div class="section-label">perjalananku</div>
-            <h2 class="section-title">Gimana aku<br>sampai di sini?</h2>
-            <p class="section-desc">Bukan jalan yang lurus — tapi setiap langkahnya punya cerita. Ini perjalananku dari
-                awal sampai sekarang.</p>
+            <div class="section-label">Seminar Offline</div>
+            <h2 class="section-title">How To Join Us? <br>The Blooming Journey</h2>
+            <p class="section-desc">Simak anu tata caranya yeah kekmana bs jadi muslimah gawl kyk kita chat for real no
+                cap periodt.</p>
         </div>
 
         <div class="timeline">
 
             <div class="tl-step">
                 <div class="tl-dot-wrap">
-                    <div class="tl-dot">🌱</div>
+                    <div class="tl-dot">1</div>
                     <div class="tl-line"></div>
                 </div>
                 <div class="tl-content">
-                    <div class="tl-badge">Awal mula · 2018</div>
-                    <div class="tl-title">Pertama kali ngerasain bikin sesuatu</div>
-                    <p class="tl-desc">Waktu SMA, aku iseng bikin blog kecil-kecilan. Nggak ada yang baca, tapi dari
-                        situlah aku nyadar betapa serunya nulis dan mendesain sesuatu dari nol.</p>
-                    <div class="tl-tag-row">
+                    <div class="tl-badge">di isi apa ya</div>
+                    <div class="tl-title">Baca ini sampe habis chat</div>
+                    <p class="tl-desc">baca yg bener jgn sampe ada yg ketinggalan</p>
+                    <!--<div class="tl-tag-row">
                         <span class="tl-tag">Blogger</span>
                         <span class="tl-tag">HTML dasar</span>
                         <span class="tl-tag">Nulis iseng</span>
-                    </div>
+                    </div>!-->
                 </div>
             </div>
 
             <div class="tl-step">
                 <div class="tl-dot-wrap">
-                    <div class="tl-dot">📚</div>
+                    <div class="tl-dot">2</div>
                     <div class="tl-line"></div>
                 </div>
                 <div class="tl-content">
-                    <div class="tl-badge">Belajar serius · 2020</div>
-                    <div class="tl-title">Mulai belajar desain & kode sungguhan</div>
-                    <p class="tl-desc">Masuk kuliah, aku mulai belajar Figma, CSS, dan dasar-dasar desain visual. Banyak
-                        begadang, banyak trial and error, tapi aku jatuh cinta sama prosesnya.</p>
-                    <div class="tl-tag-row">
-                        <span class="tl-tag">Figma</span>
-                        <span class="tl-tag">CSS</span>
-                        <span class="tl-tag">UI Dasar</span>
-                    </div>
+                    <div class="tl-badge">kosongin dulu</div>
+                    <div class="tl-title">Ke halaman ticket ya dek (scroll ke bawah)</div>
+                    <p class="tl-desc">daftar yg benar pake nama rill dek terus isi semua kolomnya</p>
                 </div>
             </div>
 
             <div class="tl-step">
                 <div class="tl-dot-wrap">
-                    <div class="tl-dot">💼</div>
+                    <div class="tl-dot">3</div>
                     <div class="tl-line"></div>
                 </div>
                 <div class="tl-content">
-                    <div class="tl-badge">Proyek pertama · 2021</div>
-                    <div class="tl-title">Nerima klien pertama — dan panik</div>
-                    <p class="tl-desc">Ada teman yang minta dibuatin desain logo untuk usahanya. Bayarannya kecil, tapi
-                        rasanya luar biasa. Dari situ aku mulai serius jalaninnya sebagai sesuatu yang nyata.</p>
-                    <div class="tl-tag-row">
-                        <span class="tl-tag">Freelance</span>
-                        <span class="tl-tag">Branding</span>
-                        <span class="tl-tag">Logo Design</span>
-                    </div>
+                    <div class="tl-badge">kosongin dulu</div>
+                    <div class="tl-title">bayar ke rekening yg udh dicantumin</div>
+                    <p class="tl-desc">bayar dengan format nama lengkap-seminar-jenistiket</p>
+                    <p class="tl-desc">Contoh: </p>
+                    <p class="tl-desc">Naila Nazua Khumairoh-Seminar-Early bird single</p>
+                    <p class="tl-desc">Naila Nazua Khumairoh-Seminar-Early bird circle</p>
+                    <p class="tl-desc">Naila Nazua Khumairoh-Seminar-Normal</p>
                 </div>
             </div>
 
             <div class="tl-step">
                 <div class="tl-dot-wrap">
-                    <div class="tl-dot">🚀</div>
+                    <div class="tl-dot">4</div>
                     <div class="tl-line"></div>
                 </div>
                 <div class="tl-content">
-                    <div class="tl-badge">Berkembang · 2023</div>
-                    <div class="tl-title">Mulai bangun portofolio & nama</div>
-                    <p class="tl-desc">Aku mulai lebih konsisten sharing karya di media sosial dan mengerjakan proyek
-                        yang lebih beragam — dari web, konten, sampai strategi visual brand.</p>
-                    <div class="tl-tag-row">
-                        <span class="tl-tag">Web Design</span>
-                        <span class="tl-tag">Content</span>
-                        <span class="tl-tag">Strategy</span>
-                    </div>
+                    <div class="tl-badge">kosongin dulu</div>
+                    <div class="tl-title">Tunggu konfirmasi pembayaran</div>
+                    <p class="tl-desc">pendaftaran kamu akan diproses dalam waktu 24 jam setelah pembayaran
+                        dikonfirmasi.
+                        ticket akan berisi kode qr akan dikirimkan ke email yang telah terdaftar </p>
                 </div>
             </div>
 
             <div class="tl-step">
                 <div class="tl-dot-wrap">
-                    <div class="tl-dot">✦</div>
+                    <div class="tl-dot">5</div>
                     <div class="tl-line"></div>
                 </div>
                 <div class="tl-content">
-                    <div class="tl-badge">Sekarang · 2026</div>
-                    <div class="tl-title">Masih di sini, masih terus belajar</div>
-                    <p class="tl-desc">Perjalanan ini belum selesai. Setiap hari ada hal baru yang bisa dipelajari. Dan
-                        aku percaya, karya terbaik aku belum lahir — masih dalam proses.</p>
-                    <div class="tl-tag-row">
-                        <span class="tl-tag">In progress</span>
-                        <span class="tl-tag">Growing</span>
-                        <span class="tl-tag">✨</span>
-                    </div>
+                    <div class="tl-badge">kosongin dulu</div>
+                    <div class="tl-title">Di invite ke group</div>
+                    <p class="tl-desc">setelah mendapatkan ticket melalui email, kamu akan di invite ke dalam group
+                        whatsapp berdasarkan nomor yg kamu daftarkan.</p>
+                </div>
+            </div>
+
+            <div class="tl-step">
+                <div class="tl-dot-wrap">
+                    <div class="tl-dot">6</div>
+                    <div class="tl-line"></div>
+                </div>
+                <div class="tl-content">
+                    <div class="tl-badge">kosongin dulu</div>
+                    <div class="tl-title">Selesai!</div>
+                    <p class="tl-desc">pastikan untuk menyimpan kode QR yang telah dikirimkan ke email kamu. dan
+                        tunjukkan ke petugas di lokasi acara.</p>
                 </div>
             </div>
 
@@ -140,7 +144,7 @@
     </section>
 
     <!-- PORTFOLIO -->
-    <section id="portfolio">
+    <section id="mms">
         <div class="section-label">karya</div>
         <h2 class="section-title">Yang pernah aku buat</h2>
         <p class="section-desc">Beberapa proyek yang sempat aku kerjakan — dari yang serius sampai yang iseng.</p>
@@ -176,7 +180,7 @@
     </section>
 
     <!-- SKILLS -->
-    <section id="skills">
+    <section id="tambahan">
         <div class="section-label">kemampuan</div>
         <h2 class="section-title">Apa yang aku bisa</h2>
         <p class="section-desc">Masih terus belajar — tapi ini hal-hal yang sudah cukup aku kuasai.</p>
