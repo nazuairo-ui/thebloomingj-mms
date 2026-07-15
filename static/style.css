@@ -639,3 +639,88 @@ footer span {
         grid-template-columns: 1fr;
     }
 }
+
+/* ── PENDAFTARAN── */
+#daftar {
+    padding: 4rem 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-container h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.8rem;
+    color: #732D3A;
+}
+
+.form-subtitle {
+    margin: 0 0 2rem;
+    color: #888;
+    font-size: 0.95rem;
+}
+
+.form-group {
+    margin-bottom: 1.4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #4a4a4a;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"] {
+    padding: 0.8rem 1rem;
+    border: 1.5px solid #e0d5d3;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #A6727C;
+}
+
+.form-group input[type="file"] {
+    padding: 0.6rem 0;
+    font-size: 0.9rem;
+}
+
+.file-hint {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 0.3rem;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 0.9rem;
+    background: linear-gradient(135deg, #732D3A 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.btn-submit:hover {
+    opacity: 0.9;
+}

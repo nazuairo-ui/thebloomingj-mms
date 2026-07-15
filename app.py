@@ -27,5 +27,10 @@ def index():
     return render_template('index.html')
 
 
+@app.route('/daftar')
+def pendaftaran():
+    return render_template('daftar.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
