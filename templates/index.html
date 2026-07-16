@@ -38,9 +38,11 @@
     <!-- HOME -->
     <section id="home">
         <img src="{{ url_for('static', filename='bunga.png') }}" class="bunga-bg" alt="">
-        <div class="hero-eyebrow glow-text">MUSLIMAH LEVEL-UP</div>
-        <h1 class="hero-title glow-text">The<br><span>Blooming Journey</span></h1>
-        <p class="hero-sub glow-text">ROOTED | UNFOLDING | BECOMING</p>
+        <div class="hero-content">
+            <div class="hero-eyebrow glow-text">MUSLIMAH LEVEL-UP</div>
+            <h1 class="hero-title glow-text">The<br><span>Blooming Journey</span></h1>
+            <p class="hero-sub glow-text">ROOTED | UNFOLDING | BECOMING</p>
+        </div>
         <div class="button-row">
             <a href="#join" class="btn">Get To Know Us</a>
             <a href="#daftar" class="btn">Daftar Sekarang</a>
@@ -50,11 +52,10 @@
     <!-- HOW TO JOIN -->
     <section id="join">
         <div class="about-header">
-            <div class="section-label">Seminar Offline</div>
-            <h2 class="section-title">How To Join Us? <br>The Blooming Journey</h2>
-            <p class="section-desc">Simak anu tata caranya yeah kekmana bs jadi muslimah gawl kyk kita chat for real
-                no
-                cap periodt.</p>
+            <div class="section-label">Seminar Madrasah Mar'ah Shalihah</div>
+            <h2 class="section-title">How To Join Us? <br>Bloom Where Allah Places You</h2>
+            <p class="section-desc">Luruskan niat dan tunjukkan keberanian untuk melanjutkan perjalanan yang Allah pilih
+                untukmu. Ikuti langkah-langkah di bawah ini untuk mendapatkan informasi lebih lanjut.</p>
         </div>
 
         <div class="timeline">
@@ -65,9 +66,10 @@
                     <div class="tl-line"></div>
                 </div>
                 <div class="tl-content">
-                    <div class="tl-badge">di isi apa ya</div>
-                    <div class="tl-title">Baca ini sampe habis chat</div>
-                    <p class="tl-desc">baca yg bener jgn sampe ada yg ketinggalan</p>
+                    <div class="tl-badge"></div>
+                    <div class="tl-title">Klik 'Daftar Sekarang'</div>
+                    <p class="tl-desc">Klik tombol 'Daftar Sekarang' untuk memulai proses pendaftaran pada halaman
+                        sebelumnya.</p>
                     <!--<div class="tl-tag-row">
                         <span class="tl-tag">Blogger</span>
                         <span class="tl-tag">HTML dasar</span>
@@ -82,9 +84,10 @@
                     <div class="tl-line"></div>
                 </div>
                 <div class="tl-content">
-                    <div class="tl-badge">kosongin dulu</div>
-                    <div class="tl-title">Ke halaman ticket ya dek (scroll ke bawah)</div>
-                    <p class="tl-desc">daftar yg benar pake nama rill dek terus isi semua kolomnya</p>
+                    <div class="tl-badge"></div>
+                    <div class="tl-title">Isi Form Pendaftaran</div>
+                    <p class="tl-desc">Isi semua kolom yang tersedia dengan informasi yang valid dan lengkap. Perlu di
+                        ingat bahwa nomor telepon dan email harus di isi dengan benar.</p>
                 </div>
             </div>
 
@@ -94,9 +97,10 @@
                     <div class="tl-line"></div>
                 </div>
                 <div class="tl-content">
-                    <div class="tl-badge">kosongin dulu</div>
-                    <div class="tl-title">bayar ke rekening yg udh dicantumin</div>
-                    <p class="tl-desc">bayar dengan format nama lengkap-seminar-jenistiket</p>
+                    <div class="tl-badge"></div>
+                    <div class="tl-title">Selesaikan Pembayaran</div>
+                    <p class="tl-desc">Lakukan pembayaran sesuai dengan instruksi yang telah diberikan. Cantumkan bukti
+                        pembayaran dengan format nama lengkap-seminar-jenis tiket.</p>
                     <p class="tl-desc">Contoh: </p>
                     <p class="tl-desc">Naila Nazua Khumairoh-Seminar-Early bird single</p>
                     <p class="tl-desc">Naila Nazua Khumairoh-Seminar-Early bird circle</p>
@@ -110,11 +114,11 @@
                     <div class="tl-line"></div>
                 </div>
                 <div class="tl-content">
-                    <div class="tl-badge">kosongin dulu</div>
-                    <div class="tl-title">Tunggu konfirmasi pembayaran</div>
-                    <p class="tl-desc">pendaftaran kamu akan diproses dalam waktu 24 jam setelah pembayaran
-                        dikonfirmasi.
-                        ticket akan berisi kode qr akan dikirimkan ke email yang telah terdaftar </p>
+                    <div class="tl-badge"></div>
+                    <div class="tl-title">Tunggu Konfirmasi Pembayaran</div>
+                    <p class="tl-desc">Pendaftaran kamu akan segera di proses oleh admin dalam kurun waktu 24 jam.</p>
+                    <p class="tl-desc">Setelah pembayaran di konfirmasi, kamu akan menerima email berisi kode QR sebagai
+                        tiket masuk ke acara. Pastikan untuk menyimpan kode QR tersebut dengan baik.</p>
                 </div>
             </div>
 
@@ -124,10 +128,10 @@
                     <div class="tl-line"></div>
                 </div>
                 <div class="tl-content">
-                    <div class="tl-badge">kosongin dulu</div>
-                    <div class="tl-title">Di invite ke group</div>
-                    <p class="tl-desc">setelah mendapatkan ticket melalui email, kamu akan di invite ke dalam group
-                        whatsapp berdasarkan nomor yg kamu daftarkan.</p>
+                    <div class="tl-badge"></div>
+                    <div class="tl-title">Masuk ke Group WhatsApp</div>
+                    <p class="tl-desc">Link group WhatsApp akan dikirimkan ke email yang telah kamu daftarkan bersamaan
+                        dengan kode QR.</p>
                 </div>
             </div>
 
@@ -137,10 +141,12 @@
                     <div class="tl-line"></div>
                 </div>
                 <div class="tl-content">
-                    <div class="tl-badge">kosongin dulu</div>
+                    <div class="tl-badge"></div>
                     <div class="tl-title">Selesai!</div>
-                    <p class="tl-desc">pastikan untuk menyimpan kode QR yang telah dikirimkan ke email kamu. dan
-                        tunjukkan ke petugas di lokasi acara.</p>
+                    <p class="tl-desc">Kamu sudah selesai mendaftar dan siap untuk mengikuti acara!
+                    <p class="tl-desc">Apabila kamu memiliki pertanyaan lebih lanjut, jangan ragu untuk menghubungi
+                        kami.</p>
+                    </p>
                 </div>
             </div>
 
@@ -149,37 +155,46 @@
 
     <!-- PORTFOLIO -->
     <section id="mms">
-        <div class="section-label">karya</div>
-        <h2 class="section-title">Yang pernah aku buat</h2>
-        <p class="section-desc">Beberapa proyek yang sempat aku kerjakan — dari yang serius sampai yang iseng.</p>
+        <div class="section-label">Madrasah Mar'ah Shalihah</div>
+        <h2 class="section-title">Yuk Kenalan dengan MMS!</h2>
+        <p class="section-desc">Madrasah Mar'ah Shalihah atau dikenal dengan singkatan MMS adalah program belajar ilmu
+            syar'i secara online khusus untuk muslimah. Diasuh dan di bimbing oleh Ustadz Dr. Ali Musri Semjan
+            Putra, M.A</p>
+        <p class="section-desc">Berikut adalah beberapa informasi tentang program MMS:</p>
         <div class="card-grid">
-            <div class="card">
-                <div class="card-thumb">🎨</div>
+            <a href="https://mmshalihah.com/seminar/open-donation-gamis-khimar/" class="card">
+                <div class="card-thumb">
+                    <img src="{{ url_for('static', filename='mms.png') }}" alt="logo mms">
+                </div>
                 <div class="card-body">
-                    <div class="card-tag">Desain</div>
-                    <div class="card-title">Brand Identity</div>
-                    <p class="card-text">Membangun identitas visual untuk brand lokal dari nol — logo, palet, hingga
-                        panduan penggunaan.</p>
+                    <div class="card-tag">Preloved</div>
+                    <div class="card-title">Mawasha Store X Mawasha Peduli</div>
+                    <p class="card-text">Program Donasi Gamis dan Khimar yang diselenggarakan pada event offline MMS.
+                    </p>
+                </div>
+            </a>
+            <div class="card">
+                <div class="card-thumb">
+                    <img src="{{ url_for('static', filename='mms.png') }}" alt="logo mms">
+                </div>
+                <div class="card-body">
+                    <div class="card-tag">Kajian</div>
+                    <div class="card-title">Kajian Rutin</div>
+                    <p class="card-text">Kajian rutin ini diselenggarakan setiap Ahad melalui media online berupa ZOOM
+                        dan YouTube oleh Ustadz Ali Musri hafidzahullah yang membahas berbagai ilmu tentang wanita
+                        maupun keluarga.</p>
                 </div>
             </div>
             <div class="card">
-                <div class="card-thumb">💻</div>
-                <div class="card-body">
-                    <div class="card-tag">Web</div>
-                    <div class="card-title">Landing Page</div>
-                    <p class="card-text">Website satu halaman yang bersih dan cepat untuk produk digital,
-                        dioptimalkan
-                        untuk konversi.</p>
+                <div class="card-thumb">
+                    <img src="{{ url_for('static', filename='mms.png') }}" alt="logo mms">
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-thumb">✍️</div>
                 <div class="card-body">
-                    <div class="card-tag">Tulisan</div>
-                    <div class="card-title">Content Strategy</div>
-                    <p class="card-text">Merancang strategi konten media sosial yang konsisten dan autentik selama
-                        tiga
-                        bulan penuh.</p>
+                    <div class="card-tag">Kursus</div>
+                    <div class="card-title">Pembelajaran Online</div>
+                    <p class="card-text">Program pembelajaran online yang menyediakan materi-materi ilmu syar'i yang
+                        lengkap dan mudah dipahami. Program ini juga dilengkapi dengan sistem evaluasi atau ujian akhir.
+                    </p>
                 </div>
             </div>
         </div>
