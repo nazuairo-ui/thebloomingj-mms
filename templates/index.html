@@ -39,9 +39,15 @@
     <section id="home">
         <img src="{{ url_for('static', filename='bunga.png') }}" class="bunga-bg" alt="">
         <div class="hero-content">
-            <div class="hero-eyebrow glow-text">MUSLIMAH LEVEL-UP</div>
-            <h1 class="hero-title glow-text">The<br><span>Blooming Journey</span></h1>
-            <p class="hero-sub glow-text">ROOTED | UNFOLDING | BECOMING</p>
+            <div class="hero-sub">MUSLIMAH LEVEL-UP</div>
+            <h1 class="hero-title glow-text">
+                The<br>
+
+                <span class="word-blooming">Blooming</span>
+                <span class="word-journey">Journey</span>
+
+            </h1>
+            <p class="hero-eyebrow glow-text">ROOTED | UNFOLDING | BECOMING</p>
         </div>
         <div class="button-row">
             <a href="#join" class="btn">Get To Know Us</a>
@@ -53,7 +59,7 @@
     <section id="join">
         <div class="about-header">
             <div class="section-label">Seminar Madrasah Mar'ah Shalihah</div>
-            <h2 class="section-title">How To Join Us? <br>Bloom Where Allah Places You</h2>
+            <h2 class="section-titletwo">How To Join Us? <br>Bloom Where Allah Places You</h2>
             <p class="section-desc">Luruskan niat dan tunjukkan keberanian untuk melanjutkan perjalanan yang Allah pilih
                 untukmu. Ikuti langkah-langkah di bawah ini untuk mendapatkan informasi lebih lanjut.</p>
         </div>
@@ -173,7 +179,7 @@
                     </p>
                 </div>
             </a>
-            <div class="card">
+            <a href="https://mmshalihah.com/kajian-ahad/" class="card">
                 <div class="card-thumb">
                     <img src="{{ url_for('static', filename='mms.png') }}" alt="logo mms">
                 </div>
@@ -184,8 +190,8 @@
                         dan YouTube oleh Ustadz Ali Musri hafidzahullah yang membahas berbagai ilmu tentang wanita
                         maupun keluarga.</p>
                 </div>
-            </div>
-            <div class="card">
+            </a>
+            <a href="https://mmshalihah.com/pembelajaran-online/" class="card">
                 <div class="card-thumb">
                     <img src="{{ url_for('static', filename='mms.png') }}" alt="logo mms">
                 </div>
@@ -196,7 +202,7 @@
                         lengkap dan mudah dipahami. Program ini juga dilengkapi dengan sistem evaluasi atau ujian akhir.
                     </p>
                 </div>
-            </div>
+            </a>
         </div>
     </section>
 

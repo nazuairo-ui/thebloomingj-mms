@@ -175,25 +175,34 @@ section:nth-child(even) {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--white);
-    margin-left: 20px;
-    margin-bottom: 35px;
+    text-align: center;
+    margin-top: 91px;
 }
 
 .hero-title {
     font-family: 'NewIconScript', serif;
-    font-size: clamp(3rem, 7vw, 6rem);
-    font-weight: 100;
-    line-height: 1.05;
+    font-size: clamp(3.5rem, 10vw, 9rem);
+    text-align: center;
+    font-weight: 400;
+    line-height: 0.2;
     letter-spacing: -0.02em;
     color: var(--soft);
 }
 
-.hero-title span {
+.hero-title .word-blooming {
+    display: block;
     font-family: 'CormorantGaramond', serif;
-    font-size: clamp(4rem, 7vw, 7rem);
+    font-size: clamp(3.5rem, 10vw, 9rem);
+    color: var(--white);
+    line-height: 0.9;
+}
+
+.hero-title .word-journey {
+    display: block;
+    font-family: 'CormorantGaramond', serif;
+    font-size: clamp(3.5rem, 10vw, 9rem);
     font-weight: 500;
     color: var(--white);
-    margin-bottom: 40px;
 }
 
 .hero-sub {
@@ -201,9 +210,11 @@ section:nth-child(even) {
     font-weight: 500;
     color: rgba(255, 255, 255, 0.65);
     max-width: 480px;
-    line-height: 1.7;
-    margin-left: 10px;
-    margin-bottom: 40px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
 }
 
 .btn {
@@ -245,7 +256,7 @@ section:nth-child(even) {
     font-size: 0.72rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: var(--violet);
+    color: white;
     font-weight: 500;
     margin-bottom: 12px;
 }
@@ -257,6 +268,16 @@ section:nth-child(even) {
     line-height: 1.15;
     letter-spacing: -0.02em;
     color: white;
+    margin-bottom: 15px;
+}
+
+.section-titletwo {
+    font-family: 'CormorantGaramond', serif;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--soft);
     margin-bottom: 15px;
 }
 
@@ -377,7 +398,7 @@ section:nth-child(even) {
 .tl-title {
     font-size: 1.35rem;
     font-weight: 600;
-    color: rgba(0, 0, 0, 0.801);
+    color: var(--soft);
     margin-bottom: 8px;
     line-height: 1.2;
     max-width: 480px;
@@ -418,6 +439,7 @@ section:nth-child(even) {
     overflow: hidden;
     border: 1px solid rgba(124, 92, 191, 0.1);
     background: var(--white);
+    text-decoration: none;
     transition: transform 0.25s, box-shadow 0.25s;
 }
 
@@ -754,4 +776,94 @@ footer span {
 
 .btn-submit:hover {
     opacity: 0.9;
+}
+
+.btn-info-tiket {
+    background: var(--violet);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: opacity 0.2s;
+}
+
+.btn-info-tiket:hover {
+    opacity: 0.85;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 200;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.modal-card {
+    position: relative;
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 380px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modal-card h3 {
+    margin: 0 0 1.2rem;
+    color: #732D3A;
+    font-size: 1.2rem;
+}
+
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: #888;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    color: #333;
+}
+
+.ticket-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ticket-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    background: #f9f5f4;
+    border-radius: 8px;
+}
+
+.ticket-list li span {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.ticket-list li strong {
+    color: #732D3A;
 }

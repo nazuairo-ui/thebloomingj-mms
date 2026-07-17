@@ -44,6 +44,10 @@
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="mms@email.com" required>
                 </div>
+                <!-- tiket info-->
+                <div class="form-group">
+                    <button type="button" class="btn-info-tiket" id="btnInfoTiket">ℹInformasi Tiket</button>
+                </div>
                 <div class="form-group">
                     <label for="bukti">Upload Bukti Transfer</label>
                     <input type="file" id="bukti" name="bukti" accept="image/*,.pdf" required>
@@ -51,8 +55,67 @@
                 </div>
                 <button type="submit" class="btn-submit">Daftar Sekarang</button>
             </form>
+            <!-- info tiket -->
+            <div class="modal-overlay" id="modalTiket">
+                <div class="modal-card">
+                    <button class="modal-close" id="modalClose">&times;</button>
+                    <h3>Informasi Harga Tiket</h3>
+                    <h4>Early Bird</h4>
+                    <h4>32 Juli - 33 Agustus</h4>
+                    <ul class="ticket-list">
+                        <li><span>Single</span><strong>Rp 320.000/Orang</strong></li>
+                        <li><span>Circle (3 Orang)</span><strong>Rp 310.000/Orang</strong></li>
+                        <li><span>Squad (5 Orang)</span><strong>Rp 299.000/Orang</strong></li>
+                    </ul>
+                    <h4>Normal</h4>
+                    <h4>34 Agustus - 35 September</h4>
+                    <ul class="ticket-list">
+                        <li><span>Single</span><strong>Rp 350.000/Orang</strong></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
+    <script>
+        const form = document.getElementById('registerForm');
+        const fields = ['nama', 'telp', 'email'];
+
+        fields.forEach(id => {
+            const input = document.getElementById(id);
+            if (!input) return;
+
+            const saved = localStorage.getItem('form_' + id);
+            if (saved) input.value = saved;
+
+            input.addEventListener('input', () => {
+                localStorage.setItem('form_' + id, input.value);
+            });
+        });
+
+        form.addEventListener('submit', () => {
+            fields.forEach(id => localStorage.removeItem('form_' + id));
+        });
+    </script>
+    <script>
+        const btnInfoTiket = document.getElementById('btnInfoTiket');
+        const modalTiket = document.getElementById('modalTiket');
+        const modalClose = document.getElementById('modalClose');
+
+        btnInfoTiket.addEventListener('click', () => {
+            modalTiket.classList.add('active');
+        });
+
+        modalClose.addEventListener('click', () => {
+            modalTiket.classList.remove('active');
+        });
+
+        // klik di luar card juga nutup modal
+        modalTiket.addEventListener('click', (e) => {
+            if (e.target === modalTiket) {
+                modalTiket.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 
 </html>
