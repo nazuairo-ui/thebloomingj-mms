@@ -868,6 +868,42 @@ footer span {
     color: #732D3A;
 }
 
+/* ── LOGIN PAGE ── */
+.login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a1a2e 0%, #3d1a20 60%, #732D3A 100%);
+    padding: 1rem;
+}
+
+.login-card {
+    background: white;
+    border-radius: var(--radius-xl);
+    padding: 2.5rem;
+    max-width: 420px;
+    width: 100%;
+    box-shadow: var(--shadow-lg);
+    animation: scaleIn 0.5s ease-out;
+    text-align: center;
+    border-top: 4px solid #A6727C;
+}
+
+.login-card .login-icon {
+    width: 72px;
+    height: 72px;
+    background: linear-gradient(135deg, #A6727C 0%, #732D3A 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    color: white;
+    box-shadow: 0 4px 15px rgba(115, 45, 58, 0.3);
+}
+
 /* ── Admin Dashboard ── */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
