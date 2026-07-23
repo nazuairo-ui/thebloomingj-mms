@@ -14,6 +14,25 @@
     --blush: #594F40;
     --white: #ffffff;
     --soft: #732D3A;
+    --bg-card: rgba(255, 255, 255, 0.85);
+    --text-dark: #2D1B36;
+    --text-body: #4A3654;
+    --text-muted: #8B7A94;
+    --success: #5DAE78;
+    --success-bg: #E8F5ED;
+    --danger: #D45D6E;
+    --danger-bg: #FDECEF;
+    --warning: #E5A63B;
+    --warning-bg: #FFF8E8;
+    --info: #5B9BD5;
+    --info-bg: #EBF3FB;
+    --shadow-sm: 0 2px 8px rgba(61, 31, 71, 0.08);
+    --shadow-md: 0 4px 20px rgba(61, 31, 71, 0.12);
+    --shadow-lg: 0 8px 40px rgba(61, 31, 71, 0.16);
+    --radius-sm: 10px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-xl: 32px;
 }
 
 html {
@@ -1767,4 +1786,49 @@ a:hover {
     .mms-stat-card .stat-value {
         font-size: 1.3rem;
     }
+}
+
+/*scanner disini*/
+.scanner-container {
+    background: white;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    border: 3px solid #D9BBB4;
+}
+
+#reader {
+    width: 100% !important;
+    border: none !important;
+}
+
+#reader video {
+    border-radius: var(--radius-md);
+}
+
+.scan-result {
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    text-align: center;
+    animation: scaleIn 0.4s ease-out;
+}
+
+.scan-result .result-icon {
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+}
+
+.scan-result.success {
+    background: #E8F5ED;
+    border: 2px solid #5DAE78;
+}
+
+.scan-result.warning {
+    background: #FFF8E8;
+    border: 2px solid #E5A63B;
+}
+
+.scan-result.error {
+    background: #FDECEF;
+    border: 2px solid #D45D6E;
 }

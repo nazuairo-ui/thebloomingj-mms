@@ -27,11 +27,9 @@
             <span class="logo-bloom">Blooming Journey</span>
         </div>
         <ul class="nav-links">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#join">How To Join</a></li>
-            <li><a href="#mms">About MMS</a></li>
-            <li><a href="#tambahan">tambahan</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="/" class="{{ 'active' if request.path == '/' }}">Home</a></li>
+            <li><a href="/admin" class="{{ 'active' if request.path == '/admin' }}">Admin</a></li>
+            <li><a href="/scan" class="{{ 'active' if '/scan' in request.path }}">Scanner</a></li>
         </ul>
     </nav>
 

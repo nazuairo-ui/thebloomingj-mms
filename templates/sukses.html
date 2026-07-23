@@ -10,7 +10,9 @@
 
             <div style="font-size: 3rem; margin-bottom: 0.5rem;" class="animate-scale-in">TBJ</div>
 
-            <h2 style="color: var(--success); font-size: 1.3rem; margin-bottom: 0.25rem;">Alhamdulillah, Berhasil!</h2>
+            <h2
+                style="color: var(--success); font-size: 1.5rem; margin-bottom: 0.25rem; font-family: 'CormorantGaramond' ;">
+                Alhamdulillah, Berhasil!</h2>
             <p style="color: var(--text-muted); font-size: 1rem; margin-bottom: 1.5rem;">
                 Ahlan <strong style="color: var(--text-dark);">{{ nama }}</strong>, ini tiket antunna
             </p>
@@ -164,9 +166,14 @@
         ctx.restore();
 
         if (logoImg) {
-            const logoSize = 60;
-            const logoX = (W - logoSize) / 2;
-            try { ctx.drawImage(logoImg, logoX, 22, logoSize, logoSize); } catch (e) { }
+            const logoW = 180;
+            const logoH = 65;
+            const logoX = (W - logoW) / 2;
+            const logoY = 15;
+
+            try {
+                ctx.drawImage(logoImg, logoX, logoY, logoW, logoH);
+            } catch (e) { }
         }
 
         ctx.fillStyle = '#A6727C';

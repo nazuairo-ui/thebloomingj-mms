@@ -183,5 +183,26 @@ def admin():
                            )
 
 
+@app.route('/scan')
+def scan():
+    return render_template('scan.html', status=None)
+
+
+@app.route('/scan/<kode_tiket>')
+def scan_kode(kode_tiket):
+    tiket = Tiket.query.filter_by(kode=kode_tiket).first()
+    if not tiket:
+        return render_template('scan.html', status='tidak ditemukan', kode=kode_tiket)
+    if tiket.is_used:
+        return render_template('scan.html', status='telah terpakai', kode=kode_tiket,
+                               nama_peserta=tiket.nama, angkatan_peserta=tiket.jenis_tiket)
+    else:
+        tiket.is_used = True
+        tiket.waktu_scan = wib_now()
+        db.session.commit()
+        return render_template('scan.html', status='berhasil', kode=kode_tiket,
+                               nama_peserta=tiket.nama, angkatan_peserta=tiket.jenis_tiket)
+
+
 if __name__ == '__main__':
     app.run(debug=True)
