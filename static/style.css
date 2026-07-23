@@ -169,6 +169,7 @@ section:nth-child(even) {
     object-fit: cover;
     z-index: 0;
     pointer-events: none;
+    filter: brightness(0.6);
 }
 
 .hero-content {
@@ -189,13 +190,26 @@ section:nth-child(even) {
     pointer-events: none;
 }
 
-.hero-eyebrow {
+.hero-eyebrow .eyebrow-main {
     font-size: 0.9rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--white);
     text-align: center;
-    margin-top: 91px;
+    margin-top: 50px;
+}
+
+.hero-eyebrow span {
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--white);
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+
 }
 
 .hero-title {
@@ -230,7 +244,7 @@ section:nth-child(even) {
     color: rgba(255, 255, 255, 0.65);
     max-width: 480px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
@@ -303,7 +317,7 @@ section:nth-child(even) {
 .section-desc {
     text-transform: uppercase, italic;
     font-size: 1rem;
-    color: var(--lavender);
+    color: white;
     max-width: 520px;
     line-height: 1.75;
     margin-bottom: 48px;
@@ -591,14 +605,17 @@ section:nth-child(even) .card {
     align-items: center;
     gap: 16px;
     padding: 18px 22px;
-    background: var(--mist);
+    background: white;
     border-radius: 14px;
-    border: 1px solid rgba(124, 92, 191, 0.1);
+    border: 1px solid rgb(22, 22, 22);
     transition: border-color 0.2s;
+    max-width: 400px;
+    width: 100%;
 }
 
+
 .contact-item:hover {
-    border-color: var(--violet);
+    border-color: rgb(32, 31, 31);
 }
 
 .contact-icon {
@@ -608,13 +625,13 @@ section:nth-child(even) .card {
 .contact-detail strong {
     display: block;
     font-size: 0.85rem;
-    color: var(--ink);
+    color: rgb(0, 0, 0);
     font-weight: 500;
 }
 
 .contact-detail span {
     font-size: 0.8rem;
-    color: var(--soft);
+    color: rgb(56, 51, 51);
 }
 
 .contact-form {
@@ -627,12 +644,12 @@ section:nth-child(even) .card {
 .contact-form textarea {
     width: 100%;
     padding: 14px 18px;
-    border: 1.5px solid rgba(124, 92, 191, 0.15);
+    border: 1.5px solid white;
     border-radius: 12px;
     font-family: 'DM Sans', sans-serif;
     font-size: 0.9rem;
-    background: var(--white);
-    color: var(--ink);
+    background: white;
+    color: white;
     outline: none;
     transition: border-color 0.2s;
     resize: none;
@@ -645,7 +662,7 @@ section:nth-child(even) .card {
 
 .contact-form button {
     padding: 14px;
-    background: var(--violet);
+    background: white;
     color: var(--white);
     border: none;
     border-radius: 12px;
